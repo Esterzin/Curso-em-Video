@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03 de JavaScript</title>
+    <style> 
+        body {
+            font: normal 15esterpt Arial;
+            color: deeppink;
+            text-align: center;
+        }
+    </style>
+    <h1>Qual a quantidade de letras do seu nome?</h1>
+</head>
+<body>
+    <script>
+        var nome = prompt("qual é seu nome?")
+        document.write(`Olá ${nome}, seu nome tem ${nome.length} letras <br/>`)
+        document.write(`seu nome em maiúsculo é ${nome.toUpperCase()} <br/>`)
+        document.write(`e seu nome é minúsculo é ${nome.toLowerCase()}`)
+    </script>
+</body>
+</html>  
