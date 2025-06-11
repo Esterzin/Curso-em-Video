@@ -15,8 +15,28 @@
 </head>
 <body>
     <h1>Primeiros passos com DOM</h1>
-    <p>Resultado</p>
-    <p>Aprenda a usar o <strong>DOM</strong> em JavaScript. </p>
-    <div>Clique em mim</div>
+    <p>Resultado </p> <!--paragrafo 0-->
+    <p>Aprenda a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div> <br>
+
+    <script>
+        /*aprendendo a selecionar o elementos -> getElementsByTagName*/
+        var p1 = document.getElementsByTagName('p')[1] 
+        document.write("para o paragrafo 1 está assim: " + p1.innerText)
+        p1.style.color = "pink"
+
+        /*getElementById*/
+        var d = document.getElementById('msg')
+        d.style.background = "purple"
+
+        /*querySelector -- id*/
+        var d = document.querySelector('div#msg')
+        d.style.color = "black"
+
+        /*querySelector -- class
+        var d = document.querySelector('div.msg')
+        style.color = "black"*/
+
+    </script>
 </body>
-</html>
+</html> 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,29 +12,18 @@
         }
     </style>
     <img src="gatas pequenas.jpg" width="300" height="300"> 
-    <br>
     
 </head>
 <body>
     <h1> Hello, world!</h1> <!--comentário em html-->
     <p> vamos começar!</p>
-    <p id="data"></p>
-    <input type="text" id="caixaDoNome" placeholder="Digite seu nome">
-    <button onclick="mostarNome()">Enviar</button>
-    <!--<button> clique aqui</button>-->
-    <br>
-    <br>
-
     <script> 
-    function mostarNome(){
-        let texto = document.getElementById("caixaDoNome").value;
-        alert("Você digitou seu nome, " + texto)
-    }
         console.log("minha primeiro aula") //comentário em JS
 
-        document.getElementById("data").innerHTML = new Date().toLocaleDateString();
-        
+         var nome = prompt("digite seu nome:")
+         alert("Prazer, " + nome + "!")
 
+       
     </script>
 </body>
 </html>
